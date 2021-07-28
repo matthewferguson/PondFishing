@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5601A4B425DF8A190062E5D7 /* ConcurrentFishingForSingleBoatOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601A4B325DF8A190062E5D7 /* ConcurrentFishingForSingleBoatOperation.swift */; };
+		5601A4BA25E076D80062E5D7 /* CastNetsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601A4B925E076D80062E5D7 /* CastNetsOperation.swift */; };
+		5624B8CA26AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5624B8C826AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld */; };
+		5624B8CD26AFF97C0041B74B /* DataFlowFunnelCD in Frameworks */ = {isa = PBXBuildFile; productRef = 5624B8CC26AFF97C0041B74B /* DataFlowFunnelCD */; };
+		564E9F0B25DA3CD7007FF23A /* Pond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564E9F0A25DA3CD7007FF23A /* Pond.storyboard */; };
+		564E9F1225DA3D65007FF23A /* PondVC+CoreDataFetchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F1025DA3D65007FF23A /* PondVC+CoreDataFetchExtension.swift */; };
+		564E9F1325DA3D65007FF23A /* PondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F1125DA3D65007FF23A /* PondVC.swift */; };
+		564E9F1B25DA46B2007FF23A /* FishMarketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F1A25DA46B1007FF23A /* FishMarketVC.swift */; };
+		564E9F2325DA46FD007FF23A /* FishMarket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564E9F2225DA46FD007FF23A /* FishMarket.storyboard */; };
+		564E9F2A25DA4FC0007FF23A /* FishingBoatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F2925DA4FC0007FF23A /* FishingBoatsVC.swift */; };
+		564E9F3025DA5157007FF23A /* FishingBoatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F2F25DA5157007FF23A /* FishingBoatsViewModel.swift */; };
+		564E9F3425DA529E007FF23A /* FishingBoatsViewModel+CoreDataFetchExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F3325DA529E007FF23A /* FishingBoatsViewModel+CoreDataFetchExt.swift */; };
+		564E9F4325DA6509007FF23A /* BoatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F4225DA6509007FF23A /* BoatNode.swift */; };
+		564E9F4725DA660C007FF23A /* BoatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F4625DA660C007FF23A /* BoatState.swift */; };
+		564E9F5F25DB7C56007FF23A /* FishingBoats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564E9F5E25DB7C56007FF23A /* FishingBoats.storyboard */; };
+		564E9F7525DBB6B3007FF23A /* AddFishingBoatOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F7425DBB6B3007FF23A /* AddFishingBoatOperation.swift */; };
+		564E9F8725DCC755007FF23A /* FishingBoatDemarcation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F8525DCC755007FF23A /* FishingBoatDemarcation.swift */; };
+		564E9F8825DCC755007FF23A /* FishingBoatDemarcation+CoreDataFetchExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9F8625DCC755007FF23A /* FishingBoatDemarcation+CoreDataFetchExt.swift */; };
+		564E9FA125DCE055007FF23A /* BoatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9FA025DCE055007FF23A /* BoatsTableViewCell.swift */; };
+		564E9FB425DE068A007FF23A /* FetchAndDescribeDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9FB325DE068A007FF23A /* FetchAndDescribeDataOperation.swift */; };
+		564E9FB825DE0EB4007FF23A /* ToggleFishingBoatStateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9FB725DE0EB4007FF23A /* ToggleFishingBoatStateOperation.swift */; };
+		5651A6DE25E355510041E0C9 /* FishMarketVC+CoreDataFetchExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651A6DD25E355510041E0C9 /* FishMarketVC+CoreDataFetchExt.swift */; };
+		566EC6FA25D4F6F100EFCB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EC6F925D4F6F100EFCB68 /* AppDelegate.swift */; };
+		566EC6FC25D4F6F100EFCB68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EC6FB25D4F6F100EFCB68 /* SceneDelegate.swift */; };
+		566EC70125D4F6F100EFCB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566EC6FF25D4F6F100EFCB68 /* Main.storyboard */; };
+		566EC70625D4F6F300EFCB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566EC70525D4F6F300EFCB68 /* Assets.xcassets */; };
+		566EC70925D4F6F300EFCB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566EC70725D4F6F300EFCB68 /* LaunchScreen.storyboard */; };
+		566EC71425D4F6F300EFCB68 /* PondFishingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EC71325D4F6F300EFCB68 /* PondFishingTests.swift */; };
+		566EC71F25D4F6F400EFCB68 /* PondFishingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EC71E25D4F6F400EFCB68 /* PondFishingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		566EC71025D4F6F300EFCB68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 566EC6EE25D4F6F100EFCB68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 566EC6F525D4F6F100EFCB68;
+			remoteInfo = PondFishing;
+		};
+		566EC71B25D4F6F400EFCB68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 566EC6EE25D4F6F100EFCB68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 566EC6F525D4F6F100EFCB68;
+			remoteInfo = PondFishing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		566EC74425D4FB3800EFCB68 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5601A4B325DF8A190062E5D7 /* ConcurrentFishingForSingleBoatOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentFishingForSingleBoatOperation.swift; sourceTree = "<group>"; };
+		5601A4B925E076D80062E5D7 /* CastNetsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastNetsOperation.swift; sourceTree = "<group>"; };
+		5624B8C926AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataFunnelModel.xcdatamodel; sourceTree = "<group>"; };
+		564E9F0A25DA3CD7007FF23A /* Pond.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pond.storyboard; sourceTree = "<group>"; };
+		564E9F1025DA3D65007FF23A /* PondVC+CoreDataFetchExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PondVC+CoreDataFetchExtension.swift"; sourceTree = "<group>"; };
+		564E9F1125DA3D65007FF23A /* PondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PondVC.swift; sourceTree = "<group>"; };
+		564E9F1A25DA46B1007FF23A /* FishMarketVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishMarketVC.swift; sourceTree = "<group>"; };
+		564E9F2225DA46FD007FF23A /* FishMarket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FishMarket.storyboard; sourceTree = "<group>"; };
+		564E9F2925DA4FC0007FF23A /* FishingBoatsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishingBoatsVC.swift; sourceTree = "<group>"; };
+		564E9F2F25DA5157007FF23A /* FishingBoatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingBoatsViewModel.swift; sourceTree = "<group>"; };
+		564E9F3325DA529E007FF23A /* FishingBoatsViewModel+CoreDataFetchExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FishingBoatsViewModel+CoreDataFetchExt.swift"; sourceTree = "<group>"; };
+		564E9F4225DA6509007FF23A /* BoatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatNode.swift; sourceTree = "<group>"; };
+		564E9F4625DA660C007FF23A /* BoatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatState.swift; sourceTree = "<group>"; };
+		564E9F5E25DB7C56007FF23A /* FishingBoats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FishingBoats.storyboard; sourceTree = "<group>"; };
+		564E9F7425DBB6B3007FF23A /* AddFishingBoatOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFishingBoatOperation.swift; sourceTree = "<group>"; };
+		564E9F8525DCC755007FF23A /* FishingBoatDemarcation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishingBoatDemarcation.swift; sourceTree = "<group>"; };
+		564E9F8625DCC755007FF23A /* FishingBoatDemarcation+CoreDataFetchExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FishingBoatDemarcation+CoreDataFetchExt.swift"; sourceTree = "<group>"; };
+		564E9FA025DCE055007FF23A /* BoatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatsTableViewCell.swift; sourceTree = "<group>"; };
+		564E9FB325DE068A007FF23A /* FetchAndDescribeDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAndDescribeDataOperation.swift; sourceTree = "<group>"; };
+		564E9FB725DE0EB4007FF23A /* ToggleFishingBoatStateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFishingBoatStateOperation.swift; sourceTree = "<group>"; };
+		5651A6DD25E355510041E0C9 /* FishMarketVC+CoreDataFetchExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FishMarketVC+CoreDataFetchExt.swift"; sourceTree = "<group>"; };
+		566EC6F625D4F6F100EFCB68 /* PondFishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PondFishing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		566EC6F925D4F6F100EFCB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		566EC6FB25D4F6F100EFCB68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		566EC70025D4F6F100EFCB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		566EC70525D4F6F300EFCB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		566EC70825D4F6F300EFCB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		566EC70A25D4F6F300EFCB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566EC70F25D4F6F300EFCB68 /* PondFishingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondFishingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566EC71325D4F6F300EFCB68 /* PondFishingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondFishingTests.swift; sourceTree = "<group>"; };
+		566EC71525D4F6F300EFCB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566EC71A25D4F6F400EFCB68 /* PondFishingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondFishingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566EC71E25D4F6F400EFCB68 /* PondFishingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondFishingUITests.swift; sourceTree = "<group>"; };
+		566EC72025D4F6F400EFCB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		566EC6F325D4F6F100EFCB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5624B8CD26AFF97C0041B74B /* DataFlowFunnelCD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566EC70C25D4F6F300EFCB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566EC71725D4F6F300EFCB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		564E9F0725DA3BD6007FF23A /* Pond */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F0925DA3C04007FF23A /* InterfaceBuilder */,
+				564E9F0825DA3BEA007FF23A /* ViewController */,
+			);
+			path = Pond;
+			sourceTree = "<group>";
+		};
+		564E9F0825DA3BEA007FF23A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F1125DA3D65007FF23A /* PondVC.swift */,
+				564E9F1025DA3D65007FF23A /* PondVC+CoreDataFetchExtension.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		564E9F0925DA3C04007FF23A /* InterfaceBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F0A25DA3CD7007FF23A /* Pond.storyboard */,
+			);
+			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		564E9F1625DA43C9007FF23A /* FishingBoats */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F8425DCC5B9007FF23A /* BackgroundTasking */,
+				564E9F4B25DB1E52007FF23A /* Operations */,
+				564E9F3925DA5EDE007FF23A /* Model */,
+				564E9F2825DA4EA4007FF23A /* InterfaceBuilder */,
+				564E9F2725DA4E83007FF23A /* ViewModel */,
+				564E9F2625DA4E71007FF23A /* ViewControllers */,
+			);
+			path = FishingBoats;
+			sourceTree = "<group>";
+		};
+		564E9F1725DA43DD007FF23A /* FishMarket */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F1825DA458A007FF23A /* InterfaceBuilder */,
+				564E9F1925DA45D8007FF23A /* ViewController */,
+			);
+			path = FishMarket;
+			sourceTree = "<group>";
+		};
+		564E9F1825DA458A007FF23A /* InterfaceBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F2225DA46FD007FF23A /* FishMarket.storyboard */,
+			);
+			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		564E9F1925DA45D8007FF23A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F1A25DA46B1007FF23A /* FishMarketVC.swift */,
+				5651A6DD25E355510041E0C9 /* FishMarketVC+CoreDataFetchExt.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		564E9F2625DA4E71007FF23A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F2925DA4FC0007FF23A /* FishingBoatsVC.swift */,
+				564E9FA025DCE055007FF23A /* BoatsTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		564E9F2725DA4E83007FF23A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F2F25DA5157007FF23A /* FishingBoatsViewModel.swift */,
+				564E9F3325DA529E007FF23A /* FishingBoatsViewModel+CoreDataFetchExt.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		564E9F2825DA4EA4007FF23A /* InterfaceBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F5E25DB7C56007FF23A /* FishingBoats.storyboard */,
+			);
+			path = InterfaceBuilder;
+			sourceTree = "<group>";
+		};
+		564E9F3925DA5EDE007FF23A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F4225DA6509007FF23A /* BoatNode.swift */,
+				564E9F4625DA660C007FF23A /* BoatState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		564E9F4B25DB1E52007FF23A /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				564E9FB325DE068A007FF23A /* FetchAndDescribeDataOperation.swift */,
+				564E9F7425DBB6B3007FF23A /* AddFishingBoatOperation.swift */,
+				564E9FB725DE0EB4007FF23A /* ToggleFishingBoatStateOperation.swift */,
+				5601A4B325DF8A190062E5D7 /* ConcurrentFishingForSingleBoatOperation.swift */,
+				5601A4B925E076D80062E5D7 /* CastNetsOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		564E9F8425DCC5B9007FF23A /* BackgroundTasking */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F8525DCC755007FF23A /* FishingBoatDemarcation.swift */,
+				564E9F8625DCC755007FF23A /* FishingBoatDemarcation+CoreDataFetchExt.swift */,
+			);
+			path = BackgroundTasking;
+			sourceTree = "<group>";
+		};
+		566EC6ED25D4F6F100EFCB68 = {
+			isa = PBXGroup;
+			children = (
+				566EC6F825D4F6F100EFCB68 /* PondFishing */,
+				566EC71225D4F6F300EFCB68 /* PondFishingTests */,
+				566EC71D25D4F6F400EFCB68 /* PondFishingUITests */,
+				566EC6F725D4F6F100EFCB68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		566EC6F725D4F6F100EFCB68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				566EC6F625D4F6F100EFCB68 /* PondFishing.app */,
+				566EC70F25D4F6F300EFCB68 /* PondFishingTests.xctest */,
+				566EC71A25D4F6F400EFCB68 /* PondFishingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		566EC6F825D4F6F100EFCB68 /* PondFishing */ = {
+			isa = PBXGroup;
+			children = (
+				564E9F0725DA3BD6007FF23A /* Pond */,
+				564E9F1625DA43C9007FF23A /* FishingBoats */,
+				564E9F1725DA43DD007FF23A /* FishMarket */,
+				5624B8C826AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld */,
+				566EC6F925D4F6F100EFCB68 /* AppDelegate.swift */,
+				566EC6FB25D4F6F100EFCB68 /* SceneDelegate.swift */,
+				566EC6FF25D4F6F100EFCB68 /* Main.storyboard */,
+				566EC70525D4F6F300EFCB68 /* Assets.xcassets */,
+				566EC70725D4F6F300EFCB68 /* LaunchScreen.storyboard */,
+				566EC70A25D4F6F300EFCB68 /* Info.plist */,
+			);
+			path = PondFishing;
+			sourceTree = "<group>";
+		};
+		566EC71225D4F6F300EFCB68 /* PondFishingTests */ = {
+			isa = PBXGroup;
+			children = (
+				566EC71325D4F6F300EFCB68 /* PondFishingTests.swift */,
+				566EC71525D4F6F300EFCB68 /* Info.plist */,
+			);
+			path = PondFishingTests;
+			sourceTree = "<group>";
+		};
+		566EC71D25D4F6F400EFCB68 /* PondFishingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				566EC71E25D4F6F400EFCB68 /* PondFishingUITests.swift */,
+				566EC72025D4F6F400EFCB68 /* Info.plist */,
+			);
+			path = PondFishingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		566EC6F525D4F6F100EFCB68 /* PondFishing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566EC72325D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishing" */;
+			buildPhases = (
+				566EC6F225D4F6F100EFCB68 /* Sources */,
+				566EC6F325D4F6F100EFCB68 /* Frameworks */,
+				566EC6F425D4F6F100EFCB68 /* Resources */,
+				566EC74425D4FB3800EFCB68 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PondFishing;
+			packageProductDependencies = (
+				5624B8CC26AFF97C0041B74B /* DataFlowFunnelCD */,
+			);
+			productName = PondFishing;
+			productReference = 566EC6F625D4F6F100EFCB68 /* PondFishing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		566EC70E25D4F6F300EFCB68 /* PondFishingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566EC72625D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingTests" */;
+			buildPhases = (
+				566EC70B25D4F6F300EFCB68 /* Sources */,
+				566EC70C25D4F6F300EFCB68 /* Frameworks */,
+				566EC70D25D4F6F300EFCB68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				566EC71125D4F6F300EFCB68 /* PBXTargetDependency */,
+			);
+			name = PondFishingTests;
+			productName = PondFishingTests;
+			productReference = 566EC70F25D4F6F300EFCB68 /* PondFishingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		566EC71925D4F6F300EFCB68 /* PondFishingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566EC72925D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUITests" */;
+			buildPhases = (
+				566EC71625D4F6F300EFCB68 /* Sources */,
+				566EC71725D4F6F300EFCB68 /* Frameworks */,
+				566EC71825D4F6F300EFCB68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				566EC71C25D4F6F400EFCB68 /* PBXTargetDependency */,
+			);
+			name = PondFishingUITests;
+			productName = PondFishingUITests;
+			productReference = 566EC71A25D4F6F400EFCB68 /* PondFishingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		566EC6EE25D4F6F100EFCB68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					566EC6F525D4F6F100EFCB68 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					566EC70E25D4F6F300EFCB68 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 566EC6F525D4F6F100EFCB68;
+					};
+					566EC71925D4F6F300EFCB68 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 566EC6F525D4F6F100EFCB68;
+					};
+				};
+			};
+			buildConfigurationList = 566EC6F125D4F6F100EFCB68 /* Build configuration list for PBXProject "PondFishing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 566EC6ED25D4F6F100EFCB68;
+			packageReferences = (
+				5624B8CB26AFF97C0041B74B /* XCRemoteSwiftPackageReference "DataFlowFunnelCD" */,
+			);
+			productRefGroup = 566EC6F725D4F6F100EFCB68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				566EC6F525D4F6F100EFCB68 /* PondFishing */,
+				566EC70E25D4F6F300EFCB68 /* PondFishingTests */,
+				566EC71925D4F6F300EFCB68 /* PondFishingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		566EC6F425D4F6F100EFCB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566EC70925D4F6F300EFCB68 /* LaunchScreen.storyboard in Resources */,
+				566EC70625D4F6F300EFCB68 /* Assets.xcassets in Resources */,
+				564E9F2325DA46FD007FF23A /* FishMarket.storyboard in Resources */,
+				566EC70125D4F6F100EFCB68 /* Main.storyboard in Resources */,
+				564E9F0B25DA3CD7007FF23A /* Pond.storyboard in Resources */,
+				564E9F5F25DB7C56007FF23A /* FishingBoats.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566EC70D25D4F6F300EFCB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566EC71825D4F6F300EFCB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		566EC6F225D4F6F100EFCB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564E9FA125DCE055007FF23A /* BoatsTableViewCell.swift in Sources */,
+				564E9F4725DA660C007FF23A /* BoatState.swift in Sources */,
+				564E9F1325DA3D65007FF23A /* PondVC.swift in Sources */,
+				564E9F2A25DA4FC0007FF23A /* FishingBoatsVC.swift in Sources */,
+				564E9F8825DCC755007FF23A /* FishingBoatDemarcation+CoreDataFetchExt.swift in Sources */,
+				5651A6DE25E355510041E0C9 /* FishMarketVC+CoreDataFetchExt.swift in Sources */,
+				566EC6FA25D4F6F100EFCB68 /* AppDelegate.swift in Sources */,
+				564E9F3425DA529E007FF23A /* FishingBoatsViewModel+CoreDataFetchExt.swift in Sources */,
+				564E9F1B25DA46B2007FF23A /* FishMarketVC.swift in Sources */,
+				564E9F4325DA6509007FF23A /* BoatNode.swift in Sources */,
+				564E9F8725DCC755007FF23A /* FishingBoatDemarcation.swift in Sources */,
+				564E9F7525DBB6B3007FF23A /* AddFishingBoatOperation.swift in Sources */,
+				564E9FB825DE0EB4007FF23A /* ToggleFishingBoatStateOperation.swift in Sources */,
+				564E9F3025DA5157007FF23A /* FishingBoatsViewModel.swift in Sources */,
+				566EC6FC25D4F6F100EFCB68 /* SceneDelegate.swift in Sources */,
+				564E9F1225DA3D65007FF23A /* PondVC+CoreDataFetchExtension.swift in Sources */,
+				564E9FB425DE068A007FF23A /* FetchAndDescribeDataOperation.swift in Sources */,
+				5624B8CA26AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld in Sources */,
+				5601A4BA25E076D80062E5D7 /* CastNetsOperation.swift in Sources */,
+				5601A4B425DF8A190062E5D7 /* ConcurrentFishingForSingleBoatOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566EC70B25D4F6F300EFCB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566EC71425D4F6F300EFCB68 /* PondFishingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566EC71625D4F6F300EFCB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566EC71F25D4F6F400EFCB68 /* PondFishingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		566EC71125D4F6F300EFCB68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 566EC6F525D4F6F100EFCB68 /* PondFishing */;
+			targetProxy = 566EC71025D4F6F300EFCB68 /* PBXContainerItemProxy */;
+		};
+		566EC71C25D4F6F400EFCB68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 566EC6F525D4F6F100EFCB68 /* PondFishing */;
+			targetProxy = 566EC71B25D4F6F400EFCB68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		566EC6FF25D4F6F100EFCB68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566EC70025D4F6F100EFCB68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		566EC70725D4F6F300EFCB68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566EC70825D4F6F300EFCB68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		566EC72125D4F6F400EFCB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		566EC72225D4F6F400EFCB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		566EC72425D4F6F400EFCB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S838S8HUW;
+				INFOPLIST_FILE = PondFishing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewferguson.PondFishing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		566EC72525D4F6F400EFCB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S838S8HUW;
+				INFOPLIST_FILE = PondFishing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewferguson.PondFishing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		566EC72725D4F6F400EFCB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S838S8HUW;
+				INFOPLIST_FILE = PondFishingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewferguson.PondFishingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondFishing.app/PondFishing";
+			};
+			name = Debug;
+		};
+		566EC72825D4F6F400EFCB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S838S8HUW;
+				INFOPLIST_FILE = PondFishingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewferguson.PondFishingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondFishing.app/PondFishing";
+			};
+			name = Release;
+		};
+		566EC72A25D4F6F400EFCB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S838S8HUW;
+				INFOPLIST_FILE = PondFishingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewferguson.PondFishingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PondFishing;
+			};
+			name = Debug;
+		};
+		566EC72B25D4F6F400EFCB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S838S8HUW;
+				INFOPLIST_FILE = PondFishingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewferguson.PondFishingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PondFishing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		566EC6F125D4F6F100EFCB68 /* Build configuration list for PBXProject "PondFishing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566EC72125D4F6F400EFCB68 /* Debug */,
+				566EC72225D4F6F400EFCB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		566EC72325D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566EC72425D4F6F400EFCB68 /* Debug */,
+				566EC72525D4F6F400EFCB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		566EC72625D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566EC72725D4F6F400EFCB68 /* Debug */,
+				566EC72825D4F6F400EFCB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		566EC72925D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566EC72A25D4F6F400EFCB68 /* Debug */,
+				566EC72B25D4F6F400EFCB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5624B8CB26AFF97C0041B74B /* XCRemoteSwiftPackageReference "DataFlowFunnelCD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matthewferguson/DataFlowFunnelCD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5624B8CC26AFF97C0041B74B /* DataFlowFunnelCD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5624B8CB26AFF97C0041B74B /* XCRemoteSwiftPackageReference "DataFlowFunnelCD" */;
+			productName = DataFlowFunnelCD;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5624B8C826AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5624B8C926AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodel */,
+			);
+			currentVersion = 5624B8C926AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodel */;
+			path = CoreDataFunnelModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 566EC6EE25D4F6F100EFCB68 /* Project object */;
+}

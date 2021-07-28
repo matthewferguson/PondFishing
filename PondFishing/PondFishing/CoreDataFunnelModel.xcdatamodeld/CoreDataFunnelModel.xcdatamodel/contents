@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D64" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Boat" representedClassName="Boat" syncable="YES" codeGenerationType="class">
+        <attribute name="boatId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="boatstorage" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="BoatCatchStorage" inverseName="associatedBoat" inverseEntity="BoatCatchStorage"/>
+    </entity>
+    <entity name="BoatCatchStorage" representedClassName="BoatCatchStorage" syncable="YES" codeGenerationType="class">
+        <attribute name="catchTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="associatedBoat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Boat" inverseName="boatstorage" inverseEntity="Boat"/>
+    </entity>
+    <entity name="FishMarket" representedClassName="FishMarket" syncable="YES" codeGenerationType="class">
+        <attribute name="numberOfFish" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Pond" representedClassName="Pond" syncable="YES" codeGenerationType="class">
+        <attribute name="numberOfFish" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Boat" positionX="34.8543701171875" positionY="-289.3999633789063" width="128" height="88"/>
+        <element name="BoatCatchStorage" positionX="241.1451416015625" positionY="-193.0568237304687" width="128" height="73"/>
+        <element name="FishMarket" positionX="218.5513916015625" positionY="-376.7372436523438" width="128" height="58"/>
+        <element name="Pond" positionX="31.567626953125" positionY="-378.9594421386719" width="128" height="58"/>
+    </elements>
+</model>

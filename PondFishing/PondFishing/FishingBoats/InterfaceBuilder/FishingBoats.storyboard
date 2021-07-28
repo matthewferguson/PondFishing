@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LoY-d8-D8Y">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fishing Boats-->
+        <scene sceneID="rmB-h5-6YY">
+            <objects>
+                <viewController storyboardIdentifier="FishingBoats_SBID" id="LoY-d8-D8Y" customClass="FishingBoatsVC" customModule="PondFishing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9uv-bl-NvE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0H-vr-AWi">
+                                <rect key="frame" x="383.5" y="108" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOW-p6-40k">
+                                <rect key="frame" x="383.5" y="275" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKh-X9-Klm">
+                                <rect key="frame" x="383.5" y="399" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="90" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2gD-kv-2TI">
+                                <rect key="frame" x="1" y="77" width="375" height="591"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FishingBoatCell_ID" rowHeight="80" id="ZYy-cb-Vjh" customClass="BoatsTableViewCell" customModule="PondFishing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZYy-cb-Vjh" id="ohQ-qi-Z8b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-7f-aqY">
+                                                    <rect key="frame" x="2" y="0.0" width="368" height="80"/>
+                                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fishing Boat #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFw-qJ-tl6">
+                                                    <rect key="frame" x="16" y="11" width="343" height="25"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="343" id="MMj-Rl-D6e"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boat Storage : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGO-fK-dJb">
+                                                    <rect key="frame" x="16" y="43" width="343" height="26"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="oiD-2f-v3m"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5pa-7f-aqY" secondAttribute="trailing" constant="-11" id="E8n-tR-4xT"/>
+                                                <constraint firstItem="dFw-qJ-tl6" firstAttribute="leading" secondItem="HGO-fK-dJb" secondAttribute="leading" id="GUn-ka-C1v"/>
+                                                <constraint firstItem="HGO-fK-dJb" firstAttribute="top" secondItem="dFw-qJ-tl6" secondAttribute="bottom" constant="7" id="Ghw-yX-jXM"/>
+                                                <constraint firstItem="5pa-7f-aqY" firstAttribute="leading" secondItem="ohQ-qi-Z8b" secondAttribute="leadingMargin" constant="-14" id="OEv-cy-ppo"/>
+                                                <constraint firstItem="HGO-fK-dJb" firstAttribute="bottom" secondItem="ohQ-qi-Z8b" secondAttribute="bottomMargin" id="Wb5-pj-5mN"/>
+                                                <constraint firstItem="dFw-qJ-tl6" firstAttribute="trailing" secondItem="HGO-fK-dJb" secondAttribute="trailing" id="WtM-NU-b51"/>
+                                                <constraint firstItem="5pa-7f-aqY" firstAttribute="centerY" secondItem="ohQ-qi-Z8b" secondAttribute="centerY" id="g4m-QT-f6S"/>
+                                                <constraint firstItem="5pa-7f-aqY" firstAttribute="top" secondItem="ohQ-qi-Z8b" secondAttribute="topMargin" constant="-11" id="jdA-zW-opX"/>
+                                                <constraint firstItem="dFw-qJ-tl6" firstAttribute="leading" secondItem="ohQ-qi-Z8b" secondAttribute="leadingMargin" id="tcS-Vg-Ouq"/>
+                                                <constraint firstItem="dFw-qJ-tl6" firstAttribute="top" secondItem="ohQ-qi-Z8b" secondAttribute="topMargin" id="vN3-6E-ZCJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="boatTitle" destination="dFw-qJ-tl6" id="Kib-wz-lcJ"/>
+                                            <outlet property="stateView" destination="5pa-7f-aqY" id="NzZ-Ib-cJ4"/>
+                                            <outlet property="storageSize" destination="HGO-fK-dJb" id="3sD-dC-QYc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fishing Boats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cy-Rj-Euq">
+                                <rect key="frame" x="60" y="34" width="187" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="XFW-YU-tSm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-Xw-amt">
+                                <rect key="frame" x="17" y="40" width="25" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="aUY-Rj-dRC"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="addFishingBoat" destination="LoY-d8-D8Y" eventType="touchUpInside" id="bAz-Ce-7TP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h1P-YB-pmg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YAB-Xw-amt" firstAttribute="centerY" secondItem="5Cy-Rj-Euq" secondAttribute="centerY" id="2Jl-Nz-BD0"/>
+                            <constraint firstItem="Z0H-vr-AWi" firstAttribute="top" secondItem="9uv-bl-NvE" secondAttribute="top" constant="108" id="4dI-nJ-WJj"/>
+                            <constraint firstItem="h1P-YB-pmg" firstAttribute="trailing" secondItem="5Cy-Rj-Euq" secondAttribute="trailing" priority="250" constant="128" id="7Fy-N7-f2m"/>
+                            <constraint firstItem="2gD-kv-2TI" firstAttribute="top" secondItem="5Cy-Rj-Euq" secondAttribute="bottom" constant="8" id="7cT-8N-pEL"/>
+                            <constraint firstItem="YAB-Xw-amt" firstAttribute="top" secondItem="h1P-YB-pmg" secondAttribute="top" constant="40" id="GlY-yO-CZW"/>
+                            <constraint firstItem="uOW-p6-40k" firstAttribute="top" secondItem="9uv-bl-NvE" secondAttribute="top" constant="275" id="P8n-AL-OmM"/>
+                            <constraint firstItem="5Cy-Rj-Euq" firstAttribute="top" secondItem="h1P-YB-pmg" secondAttribute="top" constant="34" id="XSf-Lc-vqv"/>
+                            <constraint firstItem="2gD-kv-2TI" firstAttribute="leading" secondItem="h1P-YB-pmg" secondAttribute="leading" constant="1" id="eR4-Ya-tQj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z0H-vr-AWi" secondAttribute="trailing" constant="-35" id="i2q-Mt-0XU"/>
+                            <constraint firstItem="uOW-p6-40k" firstAttribute="leading" secondItem="eKh-X9-Klm" secondAttribute="leading" id="jYI-FR-hCT"/>
+                            <constraint firstItem="eKh-X9-Klm" firstAttribute="top" secondItem="9uv-bl-NvE" secondAttribute="top" constant="399" id="m9q-lI-L68"/>
+                            <constraint firstItem="YAB-Xw-amt" firstAttribute="leading" secondItem="h1P-YB-pmg" secondAttribute="leading" constant="17" id="mnb-YV-oQE"/>
+                            <constraint firstItem="Z0H-vr-AWi" firstAttribute="leading" secondItem="2gD-kv-2TI" secondAttribute="trailing" constant="7.5" id="qk5-qM-JLj"/>
+                            <constraint firstItem="5Cy-Rj-Euq" firstAttribute="leading" secondItem="YAB-Xw-amt" secondAttribute="trailing" constant="18" id="rrA-lX-ZKv"/>
+                            <constraint firstItem="Z0H-vr-AWi" firstAttribute="leading" secondItem="uOW-p6-40k" secondAttribute="leading" id="xFM-vj-fWx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2gD-kv-2TI" secondAttribute="bottom" constant="-1" id="xT5-8X-kWA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fishing Boats" image="star.circle.fill" catalog="system" id="Vae-44-E4K"/>
+                    <connections>
+                        <outlet property="addButton" destination="YAB-Xw-amt" id="sC1-9L-IWO"/>
+                        <outlet property="myTableView" destination="2gD-kv-2TI" id="N0Y-Iw-BPa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rsd-xP-Be9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510.72000000000003" y="-469.73514741879444"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
