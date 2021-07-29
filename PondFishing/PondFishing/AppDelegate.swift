@@ -206,7 +206,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let operationResetPond = BlockOperation
         {
-            //Thread.sleep(forTimeInterval: DataFlowFunnelConstants.delayForMOCCleanup )// 1 microsecond
+            
+            // sleep for 150 milliseconds
             Thread.sleep(forTimeInterval: Double(0.015) )
             
             let managedContext = DataFlowFunnel.shared.getPersistentContainerRef().viewContext
@@ -226,8 +227,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let operationResetFishMarket = BlockOperation
         {
-            //let operation initialize.
-            //Thread.sleep(forTimeInterval: DataFlowFunnelConstants.delayForMOCCleanup )// 1 microsecond
+            // sleep for 150 milliseconds
             Thread.sleep(forTimeInterval: Double(0.015) )
             
             let managedContext1 = DataFlowFunnel.shared.getPersistentContainerRef().viewContext

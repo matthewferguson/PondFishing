@@ -110,7 +110,7 @@ class FishingBoatDemarcation : NSObject {
                 isRunning = false
             }
             DataFlowFunnel.shared.waitUntilAllOperationsAreFinished()
-            //Thread.sleep(forTimeInterval: DataFlowFunnelConstants.delay200Milliseconds) //Double(0.2)
+            // sleep for 200 milliseconds
             Thread.sleep(forTimeInterval: Double(0.2))
         }
     }
