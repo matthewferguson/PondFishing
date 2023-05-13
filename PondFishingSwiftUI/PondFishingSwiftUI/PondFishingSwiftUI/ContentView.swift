@@ -18,51 +18,6 @@ struct ContentView: View {
 
     @available(iOS 13.6, *)
     var body: some View {
-        
-//        TabView {
-//            Text("Home Tab")
-//                .font(.system(size: 30, weight: .bold, design: .rounded))
-//                .tabItem {
-//                    Image(systemName: "house.fill")
-//                    Text("Home")
-//                }
-//            Text("Bookmark Tab")
-//                .font(.system(size: 30, weight: .bold, design: .rounded))
-//                .tabItem {
-//                    Image(systemName: "bookmark.circle.fill")
-//                    Text("Bookmark")
-//                }
-//            Text("Video Tab")
-//                .font(.system(size: 30, weight: .bold, design: .rounded))
-//                .tabItem {
-//                    Image(systemName: "video.circle.fill")
-//                    Text("Video")
-//                }
-//            Text("Profile Tab")
-//                .font(.system(size: 30, weight: .bold, design: .rounded))
-//                .tabItem {
-//                    Image(systemName: "person.crop.circle")
-//                    Text("Profile")
-//                }
-//        }
-//        .accentColor(.blue)
-//        .onAppear() {
-//            UITabBar.appearance().barTintColor = .white
-//        }
-//
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         NavigationView {
             List {
                 ForEach(items) { item in
