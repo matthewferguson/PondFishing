@@ -83,7 +83,7 @@
                             <constraint firstItem="lE0-lN-tlB" firstAttribute="top" secondItem="mUw-eI-heg" secondAttribute="bottom" constant="32" id="zZW-4K-sc5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pond" image="tray.and.arrow.up" catalog="system" id="gWl-pG-uaP"/>
+                    <tabBarItem key="tabBarItem" title="Pond" image="square.and.arrow.down.on.square" catalog="system" id="gWl-pG-uaP"/>
                     <connections>
                         <outlet property="buttonReloadPond" destination="zyu-CV-VV2" id="bMd-JE-J39"/>
                         <outlet property="buttonResetPond" destination="izK-b3-xza" id="fpQ-Ot-D5S"/>
@@ -97,6 +97,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tray.and.arrow.up" catalog="system" width="128" height="115"/>
+        <image name="square.and.arrow.down.on.square" catalog="system" width="122" height="128"/>
     </resources>
 </document>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LoY-d8-D8Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LoY-d8-D8Y">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,12 +36,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="90" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2gD-kv-2TI">
-                                <rect key="frame" x="1" y="77" width="375" height="591"/>
+                                <rect key="frame" x="1" y="100" width="375" height="568"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FishingBoatCell_ID" rowHeight="80" id="ZYy-cb-Vjh" customClass="BoatsTableViewCell" customModule="PondFishing" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZYy-cb-Vjh" id="ohQ-qi-Z8b">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -94,7 +94,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fishing Boats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cy-Rj-Euq">
-                                <rect key="frame" x="60" y="34" width="187" height="35"/>
+                                <rect key="frame" x="60" y="54" width="187" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="XFW-YU-tSm"/>
                                 </constraints>
@@ -103,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-Xw-amt">
-                                <rect key="frame" x="17" y="40" width="25" height="23"/>
+                                <rect key="frame" x="17" y="60" width="25" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="aUY-Rj-dRC"/>
                                 </constraints>
@@ -134,7 +134,7 @@
                             <constraint firstAttribute="bottomMargin" secondItem="2gD-kv-2TI" secondAttribute="bottom" constant="-1" id="xT5-8X-kWA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fishing Boats" image="star.circle.fill" catalog="system" id="Vae-44-E4K"/>
+                    <tabBarItem key="tabBarItem" title="Fishing Boats" image="figure.fishing" catalog="system" id="Vae-44-E4K"/>
                     <connections>
                         <outlet property="addButton" destination="YAB-Xw-amt" id="sC1-9L-IWO"/>
                         <outlet property="myTableView" destination="2gD-kv-2TI" id="N0Y-Iw-BPa"/>
@@ -147,7 +147,7 @@
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="figure.fishing" catalog="system" width="128" height="99"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
