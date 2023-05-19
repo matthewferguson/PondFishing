@@ -12,19 +12,21 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
-            ContentView()
+            Text("Pond")
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "square.and.arrow.down")
-                    Text("Pond")
+                    Text("Pond").font(.system(size: 30, weight: .bold, design: .rounded))
+            }
+            
+            //ContentView()
+            FishingBoatsView()
+                .font(.system(size: 18, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "figure.fishing")
+                    Text("Fishing Boats Control")
                 }
             
-            Text("Fishing Boats Control")
-                            .font(.system(size: 30, weight: .bold, design: .rounded))
-                            .tabItem {
-                                Image(systemName: "figure.fishing")
-                                Text("Fishing Boats").font(.system(size: 30, weight: .bold, design: .rounded))
-                            }
             Text("Fish Market")
                             .font(.system(size: 30, weight: .bold, design: .rounded))
                             .tabItem {
@@ -38,19 +40,20 @@ struct MainTabView: View {
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
-            ContentView()
+            Text("Pond")
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "square.and.arrow.down")
-                    Text("Pond")
+                    Text("Pond").font(.system(size: 30, weight: .bold, design: .rounded))
+            }
+            
+            ContentView()
+                .font(.system(size: 30, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "figure.fishing")
+                    Text("Fishing Boats Control")
                 }
             
-            Text("Fishing Boats Control")
-                            .font(.system(size: 30, weight: .bold, design: .rounded))
-                            .tabItem {
-                                Image(systemName: "figure.fishing")
-                                Text("Fishing Boats").font(.system(size: 30, weight: .bold, design: .rounded))
-                            }
             Text("Fish Market")
                             .font(.system(size: 30, weight: .bold, design: .rounded))
                             .tabItem {
@@ -60,3 +63,4 @@ struct MainTabView_Previews: PreviewProvider {
         }
     }
 }
+

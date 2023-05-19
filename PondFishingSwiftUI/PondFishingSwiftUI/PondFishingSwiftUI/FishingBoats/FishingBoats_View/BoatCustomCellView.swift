@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct BoatCustomCellView: View {
+    var boatInfo: Boat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //HStack {
+        //Spacer()
+        VStack(alignment: .leading) {
+            Spacer()
+            Text(boatInfo.boatName)
+            Text("Fish Caught and Stored : \(boatInfo.fishStored)")
+                .font(.subheadline)
+                .foregroundColor(.black)
+            Text(String(describing:"\(boatInfo.docked)")).font(.subheadline).foregroundColor(.black)
+            Spacer()
+        }
     }
 }
 
-struct BoatCustomCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        BoatCustomCellView()
-    }
-}
+//struct BoatCustomCellView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BoatCustomCellView(boatInfo: <#Boat#>)
+//    }
+//}
