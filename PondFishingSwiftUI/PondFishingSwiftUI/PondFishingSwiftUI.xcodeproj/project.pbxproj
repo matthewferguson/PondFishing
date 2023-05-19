@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160099602A17074E009C08FB /* FishingBoatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600995F2A17074E009C08FB /* FishingBoatsView.swift */; };
 		162D94152A0DE6F10042BC3F /* PondFishingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162D94142A0DE6F10042BC3F /* PondFishingSwiftUIApp.swift */; };
 		162D94172A0DE6F10042BC3F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162D94162A0DE6F10042BC3F /* Persistence.swift */; };
 		162D941A2A0DE6F10042BC3F /* PondFishingSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 162D94182A0DE6F10042BC3F /* PondFishingSwiftUI.xcdatamodeld */; };
@@ -19,6 +20,12 @@
 		162D94452A0DF2BF0042BC3F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162D94442A0DF2BF0042BC3F /* MainTabView.swift */; };
 		162D94462A0DF2BF0042BC3F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162D94442A0DF2BF0042BC3F /* MainTabView.swift */; };
 		162D94472A0DF2BF0042BC3F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162D94442A0DF2BF0042BC3F /* MainTabView.swift */; };
+		16EB49082A1721FC00A8B6B6 /* BoatCustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EB49072A1721FC00A8B6B6 /* BoatCustomCellView.swift */; };
+		16EB49092A1721FC00A8B6B6 /* BoatCustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EB49072A1721FC00A8B6B6 /* BoatCustomCellView.swift */; };
+		16EB490A2A1721FC00A8B6B6 /* BoatCustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EB49072A1721FC00A8B6B6 /* BoatCustomCellView.swift */; };
+		16EB490B2A17253500A8B6B6 /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EB49052A171F5700A8B6B6 /* Boat.swift */; };
+		16EB490C2A17253600A8B6B6 /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EB49052A171F5700A8B6B6 /* Boat.swift */; };
+		16EB490D2A17256400A8B6B6 /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EB49052A171F5700A8B6B6 /* Boat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1600995F2A17074E009C08FB /* FishingBoatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingBoatsView.swift; sourceTree = "<group>"; };
 		162D94112A0DE6F10042BC3F /* PondFishingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PondFishingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162D94142A0DE6F10042BC3F /* PondFishingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondFishingSwiftUIApp.swift; sourceTree = "<group>"; };
 		162D94162A0DE6F10042BC3F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -53,6 +61,8 @@
 		162D94352A0DE6F30042BC3F /* PondFishingSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondFishingSwiftUIUITests.swift; sourceTree = "<group>"; };
 		162D94372A0DE6F30042BC3F /* PondFishingSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondFishingSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		162D94442A0DF2BF0042BC3F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		16EB49052A171F5700A8B6B6 /* Boat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boat.swift; sourceTree = "<group>"; };
+		16EB49072A1721FC00A8B6B6 /* BoatCustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatCustomCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1600995B2A1700FE009C08FB /* Pond */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pond;
+			sourceTree = "<group>";
+		};
+		1600995C2A170116009C08FB /* FishingBoats */ = {
+			isa = PBXGroup;
+			children = (
+				16EB49042A171ED100A8B6B6 /* FishingBoats_View */,
+				16EB49032A171EAA00A8B6B6 /* FishingBoats_Model */,
+				16EB49022A171E8600A8B6B6 /* FishingBoats_VM */,
+			);
+			path = FishingBoats;
+			sourceTree = "<group>";
+		};
+		1600995D2A17012C009C08FB /* FishMarket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FishMarket;
+			sourceTree = "<group>";
+		};
+		1600995E2A170158009C08FB /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				162D94442A0DF2BF0042BC3F /* MainTabView.swift */,
+			);
+			path = MainTabView;
+			sourceTree = "<group>";
+		};
 		162D94082A0DE6F10042BC3F = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +145,16 @@
 		162D94132A0DE6F10042BC3F /* PondFishingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1600995E2A170158009C08FB /* MainTabView */,
+				1600995B2A1700FE009C08FB /* Pond */,
+				1600995C2A170116009C08FB /* FishingBoats */,
+				1600995D2A17012C009C08FB /* FishMarket */,
 				162D94142A0DE6F10042BC3F /* PondFishingSwiftUIApp.swift */,
 				162D94162A0DE6F10042BC3F /* Persistence.swift */,
-				162D941B2A0DE6F10042BC3F /* ContentView.swift */,
 				162D941D2A0DE6F20042BC3F /* Assets.xcassets */,
 				162D941F2A0DE6F20042BC3F /* PondFishingSwiftUI.entitlements */,
 				162D94182A0DE6F10042BC3F /* PondFishingSwiftUI.xcdatamodeld */,
 				162D94202A0DE6F20042BC3F /* Preview Content */,
-				162D94442A0DF2BF0042BC3F /* MainTabView.swift */,
 			);
 			path = PondFishingSwiftUI;
 			sourceTree = "<group>";
@@ -138,6 +182,31 @@
 				162D94372A0DE6F30042BC3F /* PondFishingSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = PondFishingSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		16EB49022A171E8600A8B6B6 /* FishingBoats_VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FishingBoats_VM;
+			sourceTree = "<group>";
+		};
+		16EB49032A171EAA00A8B6B6 /* FishingBoats_Model */ = {
+			isa = PBXGroup;
+			children = (
+				16EB49052A171F5700A8B6B6 /* Boat.swift */,
+			);
+			path = FishingBoats_Model;
+			sourceTree = "<group>";
+		};
+		16EB49042A171ED100A8B6B6 /* FishingBoats_View */ = {
+			isa = PBXGroup;
+			children = (
+				162D941B2A0DE6F10042BC3F /* ContentView.swift */,
+				1600995F2A17074E009C08FB /* FishingBoatsView.swift */,
+				16EB49072A1721FC00A8B6B6 /* BoatCustomCellView.swift */,
+			);
+			path = FishingBoats_View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +342,11 @@
 				162D94152A0DE6F10042BC3F /* PondFishingSwiftUIApp.swift in Sources */,
 				162D94172A0DE6F10042BC3F /* Persistence.swift in Sources */,
 				162D941C2A0DE6F10042BC3F /* ContentView.swift in Sources */,
+				16EB490D2A17256400A8B6B6 /* Boat.swift in Sources */,
 				162D941A2A0DE6F10042BC3F /* PondFishingSwiftUI.xcdatamodeld in Sources */,
 				162D94452A0DF2BF0042BC3F /* MainTabView.swift in Sources */,
+				160099602A17074E009C08FB /* FishingBoatsView.swift in Sources */,
+				16EB49082A1721FC00A8B6B6 /* BoatCustomCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EB49092A1721FC00A8B6B6 /* BoatCustomCellView.swift in Sources */,
 				162D942C2A0DE6F30042BC3F /* PondFishingSwiftUITests.swift in Sources */,
 				162D94462A0DF2BF0042BC3F /* MainTabView.swift in Sources */,
+				16EB490B2A17253500A8B6B6 /* Boat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +368,8 @@
 				162D94382A0DE6F30042BC3F /* PondFishingSwiftUIUITestsLaunchTests.swift in Sources */,
 				162D94362A0DE6F30042BC3F /* PondFishingSwiftUIUITests.swift in Sources */,
 				162D94472A0DF2BF0042BC3F /* MainTabView.swift in Sources */,
+				16EB490A2A1721FC00A8B6B6 /* BoatCustomCellView.swift in Sources */,
+				16EB490C2A17253600A8B6B6 /* Boat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
