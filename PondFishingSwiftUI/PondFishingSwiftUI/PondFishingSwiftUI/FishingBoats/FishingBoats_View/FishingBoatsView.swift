@@ -16,15 +16,15 @@ struct FishingBoatsView: View {
     //@Environment(\.managedObjectContext) private var viewContext
     
     private var boats = [
-        Boat(boatName: "Boat #1", docked: .docked, fishStored: 2050),
+        Boat(boatName: "Boat #1", docked: .fishing, fishStored: 2050),
         Boat(boatName: "Boat #2", docked: .docked, fishStored: 3050),
         Boat(boatName: "Boat #3", docked: .docked, fishStored: 4050),
-        Boat(boatName: "Boat #4", docked: .docked, fishStored: 5050),
+        Boat(boatName: "Boat #4", docked: .fishing, fishStored: 5050),
         Boat(boatName: "Boat #5", docked: .docked, fishStored: 6050),
         Boat(boatName: "Boat #6", docked: .docked, fishStored: 7050),
         Boat(boatName: "Boat #7", docked: .docked, fishStored: 8050),
         Boat(boatName: "Boat #8", docked: .docked, fishStored: 9050),
-        Boat(boatName: "Boat #9", docked: .docked, fishStored: 10050)
+        Boat(boatName: "Boat #9", docked: .fishing, fishStored: 10050)
     ]
     
     var body: some View {
@@ -32,8 +32,9 @@ struct FishingBoatsView: View {
             List {
                 ForEach(boats) { singleboat in
                     BoatCustomCellView(boatInfo: singleboat)
-                        .listRowBackground(Color.white)
+                        .listRowBackground(singleboat.docked == .fishing ? Color.green : Color.blue)
                         .contentShape(Rectangle())
+                        //.background(singleboat.docked == .fishing ? Color.green : Color.blue)
                         .onTapGesture {
                             let selected = index
                             print(selected)// says it is a function

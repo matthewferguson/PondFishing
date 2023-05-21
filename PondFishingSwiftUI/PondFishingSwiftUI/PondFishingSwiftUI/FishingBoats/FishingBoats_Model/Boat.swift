@@ -17,7 +17,5 @@ struct Boat: Identifiable {
 //type Int64 for use with Core Data
 enum BoatState: Int64 {
     case docked  = 1,
-    fishing,
-    drydock,
-    decommissioned
+    fishing
 }
