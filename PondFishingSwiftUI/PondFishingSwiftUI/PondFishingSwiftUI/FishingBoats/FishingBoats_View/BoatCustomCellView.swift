@@ -11,16 +11,20 @@ struct BoatCustomCellView: View {
     var boatInfo: Boat
     
     var body: some View {
-        //HStack {
-        //Spacer()
         VStack(alignment: .leading) {
             Spacer()
-            Text(boatInfo.boatName)
-            Text("Fish Caught and Stored : \(boatInfo.fishStored)")
-                .font(.subheadline)
-                .foregroundColor(.black)
-            Text(String(describing:"\(boatInfo.docked)")).font(.subheadline).foregroundColor(.black)
+            Text(boatInfo.boatName + " permit: " + String(describing: boatInfo.id))
+                .font(.headline)
             Spacer()
+            Text("Fish Caught and Stored : \(boatInfo.fishStored)")
+                .font(.headline)
+                .foregroundColor(.black)
+            Spacer()
+            Text(String(describing:"\(boatInfo.docked)"))
+                .font(.headline)
+                .foregroundColor(.black)
+            Spacer()
+
         }
     }
 }

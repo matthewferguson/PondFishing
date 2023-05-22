@@ -10,38 +10,44 @@ import CoreData
 import Foundation
 
 struct FishingBoatsView: View {
-    
-    @State private var selectedIndex: Int64? // temp holding place
-    
     //@Environment(\.managedObjectContext) private var viewContext
-    
-    private var boats = [
-        Boat(boatName: "Boat #1", docked: .fishing, fishStored: 2050),
-        Boat(boatName: "Boat #2", docked: .docked, fishStored: 3050),
-        Boat(boatName: "Boat #3", docked: .docked, fishStored: 4050),
-        Boat(boatName: "Boat #4", docked: .fishing, fishStored: 5050),
-        Boat(boatName: "Boat #5", docked: .docked, fishStored: 6050),
-        Boat(boatName: "Boat #6", docked: .docked, fishStored: 7050),
-        Boat(boatName: "Boat #7", docked: .docked, fishStored: 8050),
-        Boat(boatName: "Boat #8", docked: .docked, fishStored: 9050),
-        Boat(boatName: "Boat #9", docked: .fishing, fishStored: 10050)
+    @State private var boats = [
+        Boat(boatName: "Trawler", docked: .fishing, fishStored: 2050),
+        Boat(boatName: "Trawler", docked: .docked, fishStored: 3050),
+        Boat(boatName: "Walk Around", docked: .docked, fishStored: 4050),
+        Boat(boatName: "Center Console", docked: .fishing, fishStored: 5050),
+        Boat(boatName: "Center Console", docked: .docked, fishStored: 6050),
+        Boat(boatName: "Center Console", docked: .docked, fishStored: 7050),
+        Boat(boatName: "Skiff", docked: .docked, fishStored: 8050),
+        Boat(boatName: "Skiff", docked: .docked, fishStored: 9050),
+        Boat(boatName: "Walk Around", docked: .fishing, fishStored: 10050)
     ]
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(boats) { singleboat in
-                    BoatCustomCellView(boatInfo: singleboat)
-                        .listRowBackground(singleboat.docked == .fishing ? Color.green : Color.blue)
-                        .contentShape(Rectangle())
-                        //.background(singleboat.docked == .fishing ? Color.green : Color.blue)
-                        .onTapGesture {
-                            let selected = index
-                            print(selected)// says it is a function
-                        }
-                } // For Each
-                .onDelete(perform: deleteItems)
-            }// List
+            VStack {
+                List {
+                    ForEach(boats, id: \.id) { singleboat in
+                        BoatCustomCellView(boatInfo: singleboat)
+                            .listRowBackground(singleboat.docked == .fishing ? Color.green : Color.blue)
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                var selectedBoat = singleboat
+                                if selectedBoat.docked == .docked {
+                                    selectedBoat.docked = .fishing
+                                } else {
+                                    selectedBoat.docked = .docked
+                                }
+                                
+                                if let row = self.boats.firstIndex(where: {$0.id == selectedBoat.id}) {
+                                    boats[row] = selectedBoat
+                                }
+                            }
+                    } // For Each
+                    .onDelete(perform: deleteItems)
+                    .listRowSeparatorTint(.black)
+                }// List
+            }
             
             .toolbar {
 #if os(iOS)
@@ -55,9 +61,8 @@ struct FishingBoatsView: View {
                     }
                 }
             }
-            .navigationTitle(Text("Start Fishing with a Tap"))
+            .navigationTitle(Text("Start Fishing (tap)"))
         }
-        
     }
     
     private func deleteItems(offsets: IndexSet) {

@@ -3,7 +3,6 @@
 //  PondFishingSwiftUI
 //
 //  Created by Matthew Ferguson on 5/18/23.
-//
 
 import Foundation
 
@@ -17,5 +16,5 @@ struct Boat: Identifiable {
 //type Int64 for use with Core Data
 enum BoatState: Int64 {
     case docked  = 1,
-    fishing
+         fishing = 2
 }
