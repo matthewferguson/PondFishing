@@ -6,8 +6,18 @@
 
 import Foundation
 
-struct Boat: Identifiable {
+
+//struct BoatNode {
+//    let boatId: String
+//    let boatStorage: String
+//    let state: BoatState
+//}
+
+
+
+struct FishingBoat: Identifiable {
     var id = UUID()
+    var boatId: String
     var boatName: String
     var docked: BoatState
     var fishStored: Int64

@@ -12,15 +12,15 @@ import Foundation
 struct FishingBoatsView: View {
     //@Environment(\.managedObjectContext) private var viewContext
     @State private var boats = [
-        Boat(boatName: "Trawler", docked: .fishing, fishStored: 2050),
-        Boat(boatName: "Trawler", docked: .docked, fishStored: 3050),
-        Boat(boatName: "Walk Around", docked: .docked, fishStored: 4050),
-        Boat(boatName: "Center Console", docked: .fishing, fishStored: 5050),
-        Boat(boatName: "Center Console", docked: .docked, fishStored: 6050),
-        Boat(boatName: "Center Console", docked: .docked, fishStored: 7050),
-        Boat(boatName: "Skiff", docked: .docked, fishStored: 8050),
-        Boat(boatName: "Skiff", docked: .docked, fishStored: 9050),
-        Boat(boatName: "Walk Around", docked: .fishing, fishStored: 10050)
+        FishingBoat(boatId: String(1),boatName: "Fishing Trawler", docked: .fishing, fishStored: 0),
+        FishingBoat(boatId: String(2),boatName: "Fisning Trawler", docked: .docked, fishStored: 0),
+        FishingBoat(boatId: String(3),boatName: "Fisning Walk Around", docked: .docked, fishStored: 0),
+        FishingBoat(boatId: String(4),boatName: "Fisning Center Console", docked: .fishing, fishStored: 0),
+        FishingBoat(boatId: String(5),boatName: "Fisning Center Console", docked: .docked, fishStored: 0),
+        FishingBoat(boatId: String(6),boatName: "Fisning Center Console", docked: .docked, fishStored: 0),
+        FishingBoat(boatId: String(7),boatName: "Fisning Skiff", docked: .docked, fishStored: 0),
+        FishingBoat(boatId: String(8),boatName: "Fisning Skiff", docked: .docked, fishStored: 0),
+        FishingBoat(boatId: String(9),boatName: "Fisning Walk Around", docked: .fishing, fishStored: 0)
     ]
     
     var body: some View {
