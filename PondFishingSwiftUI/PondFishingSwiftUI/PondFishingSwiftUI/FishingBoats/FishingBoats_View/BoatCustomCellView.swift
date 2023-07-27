@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BoatCustomCellView: View {
-    var boatInfo: Boat
+    var boatInfo: FishingBoat
     
     var body: some View {
         VStack(alignment: .leading) {

@@ -47,8 +47,9 @@ struct MainTabView_Previews: PreviewProvider {
                     Text("Pond").font(.system(size: 30, weight: .bold, design: .rounded))
             }
             
-            ContentView()
-                .font(.system(size: 30, weight: .bold, design: .rounded))
+            //ContentView()
+            FishingBoatsView()
+                .font(.system(size: 18, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "figure.fishing")
                     Text("Fishing Boats Control")

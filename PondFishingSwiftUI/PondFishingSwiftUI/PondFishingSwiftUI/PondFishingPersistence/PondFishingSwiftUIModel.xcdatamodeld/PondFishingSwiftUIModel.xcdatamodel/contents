@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Boat" representedClassName="Boat" syncable="YES" codeGenerationType="class">
+        <attribute name="boatId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="boatstorage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BoatCatchStorage" inverseName="associatedBoat" inverseEntity="BoatCatchStorage"/>
+    </entity>
+    <entity name="BoatCatchStorage" representedClassName="BoatCatchStorage" syncable="YES" codeGenerationType="class">
+        <attribute name="catchTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="associatedBoat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Boat" inverseName="boatstorage" inverseEntity="Boat"/>
+    </entity>
+    <entity name="FishMarket" representedClassName="FishMarket" syncable="YES" codeGenerationType="class">
+        <attribute name="numberOfFish" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Pond" representedClassName="Pond" syncable="YES" codeGenerationType="class">
+        <attribute name="numberOfFish" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+</model>

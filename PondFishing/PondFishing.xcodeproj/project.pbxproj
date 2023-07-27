@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B056F92A2004DC004D84A5 /* CoreDataFunnelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5624B8C826AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld */; };
+		16B056FA2A2004DD004D84A5 /* CoreDataFunnelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5624B8C826AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld */; };
+		16DC57322A2AB60300A8FED3 /* FetchAndDescribeDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9FB325DE068A007FF23A /* FetchAndDescribeDataOperation.swift */; };
+		16DC57332A2AB60400A8FED3 /* FetchAndDescribeDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564E9FB325DE068A007FF23A /* FetchAndDescribeDataOperation.swift */; };
 		5601A4B425DF8A190062E5D7 /* ConcurrentFishingForSingleBoatOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601A4B325DF8A190062E5D7 /* ConcurrentFishingForSingleBoatOperation.swift */; };
 		5601A4BA25E076D80062E5D7 /* CastNetsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601A4B925E076D80062E5D7 /* CastNetsOperation.swift */; };
 		5624B8CA26AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5624B8C826AFF1B80041B74B /* CoreDataFunnelModel.xcdatamodeld */; };
@@ -475,6 +479,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DC57322A2AB60300A8FED3 /* FetchAndDescribeDataOperation.swift in Sources */,
+				16B056F92A2004DC004D84A5 /* CoreDataFunnelModel.xcdatamodeld in Sources */,
 				566EC71425D4F6F300EFCB68 /* PondFishingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +489,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DC57332A2AB60400A8FED3 /* FetchAndDescribeDataOperation.swift in Sources */,
+				16B056FA2A2004DD004D84A5 /* CoreDataFunnelModel.xcdatamodeld in Sources */,
 				566EC71F25D4F6F400EFCB68 /* PondFishingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
