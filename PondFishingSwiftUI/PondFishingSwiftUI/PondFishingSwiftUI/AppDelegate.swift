@@ -112,7 +112,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 do{
                     let resultsArray:Array<Pond> = try fetchRequestPond.execute()
                     for singleRecordInPond in resultsArray {
-                        //print("singleRecordInPond.numberOfFish = \(singleRecordInPond.numberOfFish)")
                         moc2.delete(singleRecordInPond)
                         //try moc2.save()
                     }

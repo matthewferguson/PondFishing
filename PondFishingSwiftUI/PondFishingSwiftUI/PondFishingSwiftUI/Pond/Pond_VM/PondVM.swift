@@ -113,12 +113,12 @@ extension PondView
         //MARK: - NSFetchedResultsControllerDelegate
         
         nonisolated func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-            //print("controllerWillChangeContent")
+            //print("PondVM:controllerWillChangeContent")
         }
         
         nonisolated public func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
             //this area can be used to update UI
-           // print("controllerDidChangeContent")
+           // print("PondVM:controllerDidChangeContent")
         }
         
         
