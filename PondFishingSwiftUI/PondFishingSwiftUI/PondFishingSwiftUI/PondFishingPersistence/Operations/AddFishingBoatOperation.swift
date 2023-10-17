@@ -24,11 +24,12 @@ final class AddFishingBoatOperation: Operation {
     override func main() {
         
         guard !isCancelled else { return }
-
-
         let managedContext = DataFlowFunnel.shared.getPersistentContainerRef().viewContext
 
         let newBoat:Boat = Boat(context: managedContext)
+        
+        print("AddFishingBoatOperation:self.boatId = \(self.boatId)")
+        
         ///init properties
         newBoat.boatId = self.boatId
         newBoat.state = BoatState.docked.rawValue
@@ -46,7 +47,6 @@ final class AddFishingBoatOperation: Operation {
                 print("Error on saving the Boat MO in LoginUserDataOperation: == \(error),\(error.userInfo)")
             }
         }
-        managedContext.reset()
     }
     
     

@@ -16,8 +16,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     var fishingBoatBackgroundProcessing:FishingBoatDemarcation?
     var refDataFlowFunnel:DataFlowFunnel = DataFlowFunnel.shared
     
-    
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         self.refDataFlowFunnel.setModelName(to: "PondFishingSwiftUIModel" )
@@ -80,7 +78,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                     }
                 } catch let error as NSError {
                     print("Could not execute AppDelegate::fetchRequestFishMarket. \(error), \(error.userInfo)")
-                }
+                }                 
             }
     }
     
@@ -162,7 +160,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 do{
                     try managedContext.save()
                 } catch let error as NSError {
-                    print("Error on saving the User MO in didLoginWith: == \(error),\(error.userInfo)")
+                    print("Error on saving the Pond MO in resetDataStateOnTerminate: == \(error),\(error.localizedDescription)")
                 }
             }
 
@@ -175,7 +173,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 do{
                     try managedContext1.save()
                 } catch let error as NSError {
-                    print("Error on saving the User MO in didLoginWith: == \(error),\(error.userInfo)")
+                    print("Error on saving the FishMarket MO in resetDataStateOnTerminate: == \(error),\(error.localizedDescription)")
                 }
             }
         

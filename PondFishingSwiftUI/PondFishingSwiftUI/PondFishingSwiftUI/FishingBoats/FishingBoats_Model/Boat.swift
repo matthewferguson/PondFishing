@@ -7,20 +7,11 @@
 import Foundation
 
 
-//struct BoatNode {
-//    let boatId: String
-//    let boatStorage: String
-//    let state: BoatState
-//}
-
-
-
-struct FishingBoat: Identifiable {
+struct BoatNode: Identifiable{
     var id = UUID()
     var boatId: String
-    var boatName: String
-    var docked: BoatState
-    var fishStored: Int64
+    var boatStorage: String
+    var state: BoatState
 }
 
 //type Int64 for use with Core Data
