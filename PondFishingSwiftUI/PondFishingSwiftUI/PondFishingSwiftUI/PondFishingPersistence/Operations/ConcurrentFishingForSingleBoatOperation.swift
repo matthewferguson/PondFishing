@@ -142,7 +142,6 @@ final class ConcurrentFishingForSingleBoatOperation: Operation {
                     for myBoat in resultsArray {
                         self.tempCapturedBoatCatch = myBoat.boatstorage?.catchTotal ?? Int64(0)
                         myBoat.boatstorage?.catchTotal = Int64(0)
-                        //print("ConcurrentOperation:\(self.boatId) Market move boat storage set to 0")
                         try managedContext.save()
                     }
                    
@@ -151,8 +150,6 @@ final class ConcurrentFishingForSingleBoatOperation: Operation {
                 //return //return out of this operation
             }
         }
-    
-        //managedContext.reset()
     
        // now move this boatid catch into the fish market
         

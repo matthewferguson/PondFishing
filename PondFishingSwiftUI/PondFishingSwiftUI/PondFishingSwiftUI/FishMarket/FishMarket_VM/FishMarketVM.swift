@@ -60,12 +60,12 @@ extension FishMarketView
         //MARK: - NSFetchedResultsControllerDelegate
         
         nonisolated func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-            //print("controllerWillChangeContent")
+            //print("FishMarketVM:controllerWillChangeContent")
         }
         
         nonisolated public func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
             //this area can be used to update UI
-            // print("controllerDidChangeContent")
+            // print("FishMarketVM:controllerDidChangeContent")
         }
 
         nonisolated public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?)

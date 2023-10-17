@@ -104,7 +104,6 @@ extension FishingBoatsView
         func updateBoatsView(withBoatNode updatedBoat: BoatNode) {
             if let managedBoat = managedBoats.first(where: { $0.boatId == updatedBoat.boatId }) {
                 self.managedBoats[Int(managedBoat.boatId)!] = updatedBoat
-                print("%" + updatedBoat.boatId)
             }
         }
         
@@ -115,9 +114,6 @@ extension FishingBoatsView
                 DataFlowFunnel.shared.addOperation(addNewBoatOperation)
                 let describeCurrentData = FetchAndDescribeDataOperation()
                 DataFlowFunnel.shared.addOperation(describeCurrentData)
-            }
-            else {
-                print("addNewBoat::managedBoats.count = \(managedBoats.count)")
             }
         }
         
