@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 import CoreData
 import DataFlowFunnelCD
 
@@ -19,8 +18,6 @@ class FishingBoatDemarcation : NSObject {
     var isRunningOperations:Bool = false
     var monitoredOperations:[ActiveFishingBoat] = []
 
-    //private let dispatchQueue = DispatchQueue(label:"BoatControllerQueue")
-    
     fileprivate lazy var fetchAllUsersRequestController: NSFetchedResultsController<Boat> = {
          let fetchRequestForUsers: NSFetchRequest<Boat> = Boat.fetchRequest()
         
@@ -57,14 +54,11 @@ class FishingBoatDemarcation : NSObject {
          return fetchBoatStorageRecordRequest
     }()
     
-
-    
     override init(){
         super.init()
         monitoredOperations = []
         self.setupFetchControllersDemarc()
     }
-    
     
     private func setupFetchControllersDemarc() {
         do {
@@ -83,13 +77,6 @@ class FishingBoatDemarcation : NSObject {
             print("FishingBoatDemarcation Unable to Perform Fetch Request: \(fetchError), \(fetchError.localizedDescription)")
         }
     }
-    
-    func removeAllOperations(){
-        //self.dispatchQueue.sync {
-            monitoredOperations.removeAll()
-        //}
-    }
-    
     
     public func runBoatOperations() {
         var isRunning:Bool = true
@@ -114,9 +101,7 @@ class FishingBoatDemarcation : NSObject {
             Thread.sleep(forTimeInterval: Double(0.2))
         }
     }
-    
-    
-    
+
     func startAFishingOperations(with boatId: Int64) {
         
         let activeBoat = ActiveFishingBoat(boatId: boatId)
@@ -135,6 +120,5 @@ class FishingBoatDemarcation : NSObject {
             monitoredOperations.remove(at: locationIndex)
         }
     }
-
     
 }

@@ -58,8 +58,6 @@ final class ConcurrentFishingForSingleBoatOperation: Operation {
                 print("Could not execute . \(error), \(error.userInfo)")
             }
         }
-        managedContext.reset()
-        
     }
     
     
@@ -120,7 +118,6 @@ final class ConcurrentFishingForSingleBoatOperation: Operation {
                 return //return out of this operation
             }
         }
-        managedContext.reset()
     }
     
     
@@ -155,7 +152,7 @@ final class ConcurrentFishingForSingleBoatOperation: Operation {
             }
         }
     
-        managedContext.reset()
+        //managedContext.reset()
     
        // now move this boatid catch into the fish market
         
@@ -177,7 +174,6 @@ final class ConcurrentFishingForSingleBoatOperation: Operation {
                 //return //return out of this operation
             }
         }
-        managedContext.reset()
     }
     
     
@@ -223,9 +219,6 @@ final class ConcurrentFishingForSingleBoatOperation: Operation {
                 print("ConcurrentFishingForSingleBoatOperation:pondAndBoatMaintenance Could not execute managedContext. \(error), \(error.userInfo)")
             }
         }
-        
-        managedContext.reset() //return context to base state
-                
     }
     
     override func main()

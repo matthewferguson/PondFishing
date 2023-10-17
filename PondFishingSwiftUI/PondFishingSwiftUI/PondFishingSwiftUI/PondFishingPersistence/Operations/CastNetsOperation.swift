@@ -20,14 +20,9 @@ final class CastNetsOperation: Operation {
     init( newBoatId:Int64) {
         super.init()
     }
-    
-    
 
     override func main() {
-        
         guard !isCancelled else { return }
         print("CastNetsOperation")
     }
-    
-    
 }
