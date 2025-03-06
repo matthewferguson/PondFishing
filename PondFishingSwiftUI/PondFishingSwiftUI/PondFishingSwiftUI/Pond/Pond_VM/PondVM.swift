@@ -12,7 +12,7 @@ import DataFlowFunnelCD
 
 extension PondView
 {
-    @MainActor class PondVM: NSObject, ObservableObject, NSFetchedResultsControllerDelegate
+    class PondVM: NSObject, ObservableObject, NSFetchedResultsControllerDelegate, @unchecked Sendable
     {
         @Published var fishCount:String = String()
 
@@ -128,9 +128,7 @@ extension PondView
                 case .insert:
                     switch anObject {
                         case let tempPond as Pond:
-                            DispatchQueue.main.async {
-                                self.fishCount = String(describing: tempPond.numberOfFish)
-                            }
+                            self.fishCount = String(describing: tempPond.numberOfFish)
                         break
                         default:
                         break
@@ -140,9 +138,7 @@ extension PondView
                 case .update:
                     switch anObject {
                         case let tempPond as Pond:
-                            DispatchQueue.main.async {
-                                self.fishCount = String(describing: tempPond.numberOfFish)
-                            }
+                            self.fishCount = String(describing: tempPond.numberOfFish)
                         break
                         default:
                         break

@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 import DataFlowFunnelCD
 
-final class FetchAndDescribeDataOperation: Operation {
+final class FetchAndDescribeDataOperation: Operation, @unchecked Sendable {
     
     var boatId: Int64 = 0
     

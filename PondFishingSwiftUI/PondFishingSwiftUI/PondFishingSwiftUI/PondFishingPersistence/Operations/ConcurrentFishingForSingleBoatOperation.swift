@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 import DataFlowFunnelCD
 
-final class ConcurrentFishingForSingleBoatOperation: Operation {
+final class ConcurrentFishingForSingleBoatOperation: Operation, @unchecked Sendable {
     
     var boatId: Int64 = 0
     var moveBoatToDocked: Bool = false

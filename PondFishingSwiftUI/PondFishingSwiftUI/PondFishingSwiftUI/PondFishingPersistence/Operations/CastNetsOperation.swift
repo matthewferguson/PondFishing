@@ -13,7 +13,7 @@ import DataFlowFunnelCD
 // FUTURE DEVELOPMENT - building a background OperationQueue with Priorities on Operations.
 //  this is part of that future R&D. 
 
-final class CastNetsOperation: Operation {
+final class CastNetsOperation: Operation, @unchecked Sendable {
     
     var boatId: Int64 = 0
     
