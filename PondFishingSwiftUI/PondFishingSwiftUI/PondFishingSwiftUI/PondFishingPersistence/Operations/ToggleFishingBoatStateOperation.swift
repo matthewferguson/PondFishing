@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 import DataFlowFunnelCD
 
-final class ToggleFishingBoatStateOperation: Operation {
+final class ToggleFishingBoatStateOperation: Operation, @unchecked Sendable {
     
     var boatId: Int64 = 0
     

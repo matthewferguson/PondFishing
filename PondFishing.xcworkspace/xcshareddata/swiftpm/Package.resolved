@@ -1,14 +1,15 @@
 {
+  "originHash" : "72ed276c3aeeecbb700bbf62dc1bce43ffd12746ed8895ee778c31f6ab49ae82",
   "pins" : [
     {
       "identity" : "dataflowfunnelcd",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/matthewferguson/DataFlowFunnelCD.git",
       "state" : {
-        "revision" : "49e031b0093481658aa905565358cc40e24ecfac",
-        "version" : "1.2.0"
+        "revision" : "d2a5159b6462a2a630ec40067d756cc172349144",
+        "version" : "1.4.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

@@ -12,7 +12,7 @@ import DataFlowFunnelCD
 
 
 
-final class AddFishingBoatOperation: Operation {
+final class AddFishingBoatOperation: Operation, @unchecked Sendable {
     
     var boatId: Int64 = 0
     
