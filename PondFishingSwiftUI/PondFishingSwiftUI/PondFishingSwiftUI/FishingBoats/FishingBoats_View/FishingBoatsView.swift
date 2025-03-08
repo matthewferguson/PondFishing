@@ -45,7 +45,7 @@ struct FishingBoatsView: View {
                     }
                 }
             }
-            .navigationTitle(Text("Start Fishing (TAP)"))
+            .navigationTitle(Text("Start (TAP +)"))
         }
     }
 
