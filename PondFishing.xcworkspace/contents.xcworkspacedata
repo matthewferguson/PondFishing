@@ -5,7 +5,7 @@
       location = "group:PondFishingSwiftUI/PondFishingSwiftUI/PondFishingSwiftUI.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:PondFishing/PondFishing.xcodeproj">
+      location = "group:PondFishing/PondFishingUIKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:PondFishingSwiftUI/PondFishingSwiftUI/../../README.md">

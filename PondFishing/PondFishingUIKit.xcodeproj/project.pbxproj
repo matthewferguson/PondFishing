@@ -94,17 +94,17 @@
 		564E9FB325DE068A007FF23A /* FetchAndDescribeDataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAndDescribeDataOperation.swift; sourceTree = "<group>"; };
 		564E9FB725DE0EB4007FF23A /* ToggleFishingBoatStateOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFishingBoatStateOperation.swift; sourceTree = "<group>"; };
 		5651A6DD25E355510041E0C9 /* FishMarketVC+CoreDataFetchExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FishMarketVC+CoreDataFetchExt.swift"; sourceTree = "<group>"; };
-		566EC6F625D4F6F100EFCB68 /* PondFishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PondFishing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		566EC6F625D4F6F100EFCB68 /* PondFishingUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PondFishingUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EC6F925D4F6F100EFCB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		566EC6FB25D4F6F100EFCB68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		566EC70025D4F6F100EFCB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566EC70525D4F6F300EFCB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566EC70825D4F6F300EFCB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		566EC70A25D4F6F300EFCB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		566EC70F25D4F6F300EFCB68 /* PondFishingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondFishingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566EC70F25D4F6F300EFCB68 /* PondFishingUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondFishingUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EC71325D4F6F300EFCB68 /* PondFishingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondFishingTests.swift; sourceTree = "<group>"; };
 		566EC71525D4F6F300EFCB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		566EC71A25D4F6F400EFCB68 /* PondFishingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondFishingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566EC71A25D4F6F400EFCB68 /* PondFishingUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PondFishingUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EC71E25D4F6F400EFCB68 /* PondFishingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondFishingUITests.swift; sourceTree = "<group>"; };
 		566EC72025D4F6F400EFCB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,9 +269,9 @@
 		566EC6F725D4F6F100EFCB68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				566EC6F625D4F6F100EFCB68 /* PondFishing.app */,
-				566EC70F25D4F6F300EFCB68 /* PondFishingTests.xctest */,
-				566EC71A25D4F6F400EFCB68 /* PondFishingUITests.xctest */,
+				566EC6F625D4F6F100EFCB68 /* PondFishingUIKit.app */,
+				566EC70F25D4F6F300EFCB68 /* PondFishingUIKitTests.xctest */,
+				566EC71A25D4F6F400EFCB68 /* PondFishingUIKitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,9 +314,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		566EC6F525D4F6F100EFCB68 /* PondFishing */ = {
+		566EC6F525D4F6F100EFCB68 /* PondFishingUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566EC72325D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishing" */;
+			buildConfigurationList = 566EC72325D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUIKit" */;
 			buildPhases = (
 				566EC6F225D4F6F100EFCB68 /* Sources */,
 				566EC6F325D4F6F100EFCB68 /* Frameworks */,
@@ -327,17 +327,17 @@
 			);
 			dependencies = (
 			);
-			name = PondFishing;
+			name = PondFishingUIKit;
 			packageProductDependencies = (
 				5624B8CC26AFF97C0041B74B /* DataFlowFunnelCD */,
 			);
 			productName = PondFishing;
-			productReference = 566EC6F625D4F6F100EFCB68 /* PondFishing.app */;
+			productReference = 566EC6F625D4F6F100EFCB68 /* PondFishingUIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		566EC70E25D4F6F300EFCB68 /* PondFishingTests */ = {
+		566EC70E25D4F6F300EFCB68 /* PondFishingUIKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566EC72625D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingTests" */;
+			buildConfigurationList = 566EC72625D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUIKitTests" */;
 			buildPhases = (
 				566EC70B25D4F6F300EFCB68 /* Sources */,
 				566EC70C25D4F6F300EFCB68 /* Frameworks */,
@@ -348,14 +348,14 @@
 			dependencies = (
 				566EC71125D4F6F300EFCB68 /* PBXTargetDependency */,
 			);
-			name = PondFishingTests;
+			name = PondFishingUIKitTests;
 			productName = PondFishingTests;
-			productReference = 566EC70F25D4F6F300EFCB68 /* PondFishingTests.xctest */;
+			productReference = 566EC70F25D4F6F300EFCB68 /* PondFishingUIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		566EC71925D4F6F300EFCB68 /* PondFishingUITests */ = {
+		566EC71925D4F6F300EFCB68 /* PondFishingUIKitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566EC72925D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUITests" */;
+			buildConfigurationList = 566EC72925D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUIKitUITests" */;
 			buildPhases = (
 				566EC71625D4F6F300EFCB68 /* Sources */,
 				566EC71725D4F6F300EFCB68 /* Frameworks */,
@@ -366,9 +366,9 @@
 			dependencies = (
 				566EC71C25D4F6F400EFCB68 /* PBXTargetDependency */,
 			);
-			name = PondFishingUITests;
+			name = PondFishingUIKitUITests;
 			productName = PondFishingUITests;
-			productReference = 566EC71A25D4F6F400EFCB68 /* PondFishingUITests.xctest */;
+			productReference = 566EC71A25D4F6F400EFCB68 /* PondFishingUIKitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -394,7 +394,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 566EC6F125D4F6F100EFCB68 /* Build configuration list for PBXProject "PondFishing" */;
+			buildConfigurationList = 566EC6F125D4F6F100EFCB68 /* Build configuration list for PBXProject "PondFishingUIKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -410,9 +410,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				566EC6F525D4F6F100EFCB68 /* PondFishing */,
-				566EC70E25D4F6F300EFCB68 /* PondFishingTests */,
-				566EC71925D4F6F300EFCB68 /* PondFishingUITests */,
+				566EC6F525D4F6F100EFCB68 /* PondFishingUIKit */,
+				566EC70E25D4F6F300EFCB68 /* PondFishingUIKitTests */,
+				566EC71925D4F6F300EFCB68 /* PondFishingUIKitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -500,12 +500,12 @@
 /* Begin PBXTargetDependency section */
 		566EC71125D4F6F300EFCB68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 566EC6F525D4F6F100EFCB68 /* PondFishing */;
+			target = 566EC6F525D4F6F100EFCB68 /* PondFishingUIKit */;
 			targetProxy = 566EC71025D4F6F300EFCB68 /* PBXContainerItemProxy */;
 		};
 		566EC71C25D4F6F400EFCB68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 566EC6F525D4F6F100EFCB68 /* PondFishing */;
+			target = 566EC6F525D4F6F100EFCB68 /* PondFishingUIKit */;
 			targetProxy = 566EC71B25D4F6F400EFCB68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -713,7 +713,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondFishing.app/PondFishing";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondFishingUIKit.app/PondFishingUIKit";
 			};
 			name = Debug;
 		};
@@ -738,7 +738,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondFishing.app/PondFishing";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PondFishingUIKit.app/PondFishingUIKit";
 			};
 			name = Release;
 		};
@@ -791,7 +791,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		566EC6F125D4F6F100EFCB68 /* Build configuration list for PBXProject "PondFishing" */ = {
+		566EC6F125D4F6F100EFCB68 /* Build configuration list for PBXProject "PondFishingUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566EC72125D4F6F400EFCB68 /* Debug */,
@@ -800,7 +800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566EC72325D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishing" */ = {
+		566EC72325D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566EC72425D4F6F400EFCB68 /* Debug */,
@@ -809,7 +809,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566EC72625D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingTests" */ = {
+		566EC72625D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUIKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566EC72725D4F6F400EFCB68 /* Debug */,
@@ -818,7 +818,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566EC72925D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUITests" */ = {
+		566EC72925D4F6F400EFCB68 /* Build configuration list for PBXNativeTarget "PondFishingUIKitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566EC72A25D4F6F400EFCB68 /* Debug */,
