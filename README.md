@@ -1,4 +1,4 @@
-# PondFishing
+# PondFishing (R&D)
 
 Contention/Crash test app for the DataFlowFunnelCD Swift Package. This little project queues up each of the simulated fishing boats requests to prevent the aperiodic illusive Core Data contention/crash problems. The problem exist when two competing processing threads, foreground and background threads, update or create (CRUD operations) on the same Core Data managed context objects. 
 
